@@ -1,0 +1,451 @@
+PR‚CTICA 1
+
+Recursi’n
+
+
+
+Recursi’n de definiciones axiom¬ticas/algoritmos sobre estructuras de
+datos simples
+
+Definir una funci’n recursiva sumatoria, que dado un entero n, retorne
+el resultado de la suma 1+2+3+...+(n-1)+n.
+
+Definir una funci’n recursiva factorial, que dado un nﬂmero entero
+positivo, retorne el factorial de ese nﬂmero.
+
+Definir una funci’n recursiva fibonacci, que dado un entero n, retorne
+el n- simo t rmino de la sucesi’n de Fibonacci (1, 1, 2, 3, 5, 8, 13,
+...).
+
+Definir una funci’n recursiva producto, que dados dos nﬂmeros enteros z
+y v, retorne z*v mediante sumas sucesivas.
+
+Definir funciones recursivas cociente y resto, que a partir de dos
+nﬂmeros enteros, retorne el cociente y el resto entre ellos
+respectivamente, a partir de la t cnica de restas sucesivas. Expresar
+cu¬l serŒa el orden bien fundado entre los elementos del dominio para
+esta funci’n.
+
+Definir la funci’n recursiva mcd (m¬ximo comﬂn divisor), que dados dos
+nﬂmeros enteros positivos, retorne el m¬ximo comﬂn divisor entre ellos.
+
+Definir la funci’n recursiva combinatorio, que dados dos nﬂmeros enteros
+no negativos n y k (0 <= k <= n), retorne el nﬂmero combinatorio en base
+a ellos.
+
+Definir lo siguiente:
+
+Una funci’n recursiva digitos, que dado un nﬂmero entero, retorne su
+cantidad de dŒgitos.
+
+Una funci’n recursiva reversaNum, que dado un nﬂmero entero, retorne su
+imagen especular. Por ejemplo: reversaNum(345) = 543
+
+Intente definir una funci’n recursiva que retorne los dos valores
+anteriores a la vez como un par, aprovechando la recursi’n. Definirla
+como funci’n y como procedimiento algorŒtmico.
+
+Definiremos la funci’n de Ackermann como una funci’n de los enteros no
+negativos N y M sobre los enteros mediante las siguientes definiciones
+axiom¬ticas:
+
+Definir la funci’n recursiva ackermann que permita calcular A(M, N) para
+todo M>=0 y N>=0. Exprese cu¬l serŒa el orden bien fundado sobre los
+elementos del dominio.
+
+La raŒz cuadrada de un nﬂmero positivo A puede calcularse mediante un
+proceso que va generando t rminos segﬂn la siguiente f’rmula:
+
+R1 = 1
+
+Ri = 1 / 2 (Ri-1 + (A / Ri-1))	(para i > 1)
+
+Definir la funci’n recursiva raiz, que dado un nﬂmero entero positivo A,
+retorne la raŒz cuadrada aproximada de ese nﬂmero.
+
+Definir la funci’n recursiva taylor, que dados dos valores reales x y
+tol, retorna el valor de sen(x) desarrollado utilizando el polinomio de
+Taylor. Esta funci’n recursiva deber¬ generar la sumatoria siguiente,
+obteniendo t rminos sucesivos hasta encontrar uno menor al valor de
+tolerancia dado tol (en valor absoluto):
+
+	x - x3/3! + x5/5! - x7/7!....+ (-1)n * x 2n+1/(2n+1)!
+
+Implementar un procedimiento recursivo sierpinski que permita dibujar el
+tri¬ngulo de Sierpinski de 3 niveles, tal como se describe a
+continuaci’n:
+
+Este procedimiento, si bien debe expresarse en forma precisa, puede
+definirse utilizando llamados a supuestos procedimientos que permitan
+dibujar lŒneas entre dos puntos u obtener puntos a partir de otros
+puntos, un ¬ngulo y una distancia.
+
+Implementar un procedimiento recursivo haches que permita dibujar el
+siguiente gr¬fico de 4 niveles, tal como se describe a continuaci’n:
+
+Implementar un procedimiento recursivo cuadrados que permita dibujar el
+siguiente gr¬fico de 4 niveles, tal como se describe a continuaci’n:
+
+Definir axiom¬ticamente, para luego definir el procedimiento pares, que
+dado un nﬂmero entero, muestre todos los pares de nﬂmeros enteros
+positivos que son suma del nﬂmero entero dado. Por ejemplo, 5 = (1 , 4),
+(2, 3). Asumir como existentes los TAD que necesite.
+
+Definir la funci’n desdeHasta, que dados dos nﬂmeros enteros retorne una
+lista de nﬂmeros consecutivos donde el primer elemento de la lista
+resultante sea el primer elemento dado, y el ﬂltimo elemento de la lista
+resultante sea el segundo elemento dado.
+
+Redefinir las funciones sumatoria y factorial utilizando desdeHasta.
+
+Recursi’n de definiciones axiom¬ticas/algoritmos sobre estructuras de
+datos recursivas
+
+Especificar el TAD ListaEnt (lista de enteros) como estructura recursiva
+con sus constructores y proyectores.
+
+Del mismo modo, especificar el TAD Lista(a) (lista con elementos del
+tipo gen rico a) con sus constructores y proyectores.
+
+Intentar especificar funcionalmente los procedimientos recursivos antes
+mencionados sierpinski, haches y cuadrados utilizando la especificaci’n
+del TAD Lista(a).
+
+Definir la funci’n longitud, que dada una lista de enteros, retorne la
+cantidad de elementos que contiene.
+
+Definir la funci’n = (igualdad de listas) que dadas dos listas de
+enteros, retorne si ambas son iguales (contienen exactamente la misma
+cantidad de elementos, y poseen igualdad de elementos posici’n por
+posici’n).
+
+Definir la funci’n sumatoriaLista, que dada una lista de enteros,
+retorne la sumatoria de todos sus elementos.
+
+Definir la funci’n pertenece, que dada una lista de enteros, y un entero
+dado, retorne si el entero dado es igual a algﬂn elemento de la lista
+dada.
+
+Definir la funci’n concatenacion, que dadas dos listas de enteros,
+retorne la lista resultante de la concatenaci’n de la primera lista a la
+segunda lista.
+
+Definir la funci’n ultimo, que dada una listas de enteros, retorne su
+ﬂltimo elemento.
+
+Definir una versi’n recursiva y otra versi’n no recursiva a la funci’n
+penultimo, que dada una listas de enteros, retorne su penﬂltimo
+elemento.
+
+Definir la funci’n primeros, que dada una lista de enteros y un nﬂmero n
+dado, retorne los primeros n elementos de la lista dada.
+
+Definir la funci’n posicion, que dada una lista de enteros y un nﬂmero n
+dado, retorne el elemento de la lista correspondiente a la posici’n n.
+
+Definir la funci’n maximo, que dada una lista de enteros, retorne el
+m¬ximo elemento de todos los que conforman a la lista.
+
+Definir la funci’n reversa, que dada una lista de enteros, retorne un
+alista de enteros con todos sus elementos invertidos en sus posiciones.
+
+Por ejemplo: reversa([4,5,2,9]) = [9,2,5,4].
+
+Definir la funci’n esPalindromo, que dada una lista de enteros, retorne
+si es o no es palŒndromo, utilizando recursividad explŒcita.
+
+Idem a), pero defini ndola a partir de otras funciones.
+
+Definir la funci’n cantidad, que dada una lista de enteros y un nﬂmero
+n, retorne la cantidad de apariciones del nﬂmero n en la lista dada.
+
+Definir la funci’n sublista, que dada una lista de enteros, un nﬂmero
+que represente una posici’n y otro nﬂmero que represente una longitud,
+devuelva una lista de enteros (que se basa en la lista dada) que
+comience en la posici’n dada y que tenga la longitud dada desde esa
+posici’n.
+
+Definir la funci’n intercalar, que dadas dos listas de enteros, retorne
+una lista de enteros que corresponda al intercalado elemento a elemento
+de las dos listas dadas.
+
+Por ejemplo: intercalar([4,5,2], [3,8,9]) = [4,3,5,8,2,9].
+
+Definir la funci’n aplanar, que dada una lista de listas de enteros,
+retorne un lista de enteros que corresponda a la concatenaci’n de
+elementos-lista de la lista original.
+
+Por ejemplo: aplanar([[5,7], [], [3,7,2], [9]) = [5,7,3,7,2,9].
+
+Definir la funci’n longitudLL, que dada una lista de listas, retorne un
+nﬂmero que sea la cantidad total de elementos acumulados entre todos sus
+elementos-listas. Utilizar la funci’n aplanar.
+
+Definir la funci’n quicksort, que dada una lista de enteros, retorne la
+lista original, pero con sus elementos ordenados, utilizando el m todo
+de ordenamiento quicksort.
+
+Definir la funci’n partes, que dada una lista de enteros, retorne una
+lista de listas de enteros, en que cada elemento de la lista resultado
+sea cada una de las sublistas de la lista original (respetando la
+posici’n).
+
+Por ejemplo: partes([6,2,3]) =
+[[],[6],[2],[3],[6,2],[6,3],[2,3],[6,2,3]].
+
+(no necesariamente en ese orden)
+
+Definir la funci’n permutaciones, que dada una lista de enteros, retorne
+una lista de listas de enteros, donde cada lista-elemento es cada una de
+las posibles permutaciones de la lista original.
+
+Por ejemplo: permutaciones([6,2,3]) = [[6,2,3], [6,3,2], [2,3,6],
+[2,6,3], [3,2,6], [3,6,2]].
+
+(no necesariamente en ese orden)
+
+Definir la funci’n todosConTodos, que dadas dos listas de enteros,
+retorne una lista de pares de enteros que formen parte de combinaciones
+de elementos de la primera lista con elementos de la segunda lista.
+
+Por ejemplo: todosConTodos([6,2,3],[7,5]) = [(6,7), (6,5), (2,7), (2,5),
+(3,7), (3,5)].
+
+Definir la funci’n todosConTodosN generalizada de la anterior, que dadas
+n listas de enteros (una lista de listas de enteros), retorne una lista
+de listas de enteros en que en cada lista-elemento exista un elemento de
+cada una de las listas-elemento de la lista original.
+
+Por ejemplo: todosConTodosN([[6,2,3],[7,5],[9,4]]) = [[6,7,9], [6,7,4],
+[6,5,9], [6,5,4], [2,7,9], [2,7,4], [2,5,9], [2,5,4], [3,7,9], [3,7,4],
+[3,5,9], [3,5,4]].
+
+(no necesariamente en ese orden)
+
+Reespecificar el ya definido TAD ListaEnt para que pueda aceptar
+elementos de cualquier tipo/TAD, aunque deber¬ ser el mismo para todos
+sus elementos. Llamar a este nueva TAD Lista(a).
+
+Especificar el TAD Nat (nﬂmeros naturales), con constructores propios, y
+con operaciones de suma y producto.
+
+Idem a), pero especificando el TAD Nat a partir del TAD de las listas.
+
+Especificar el TAD Conjunto(a) (conjunto de elementos de tipo a, donde
+los elementos no se repiten y no tienen una posici’n en el conjunto) con
+operaciones de agregar elemento, eliminar elemento, pertenece, y
+conversi’n a lista. Definirlo a partir del TAD de las listas.
+
+Implementar el TAD Lista(a) especificado anteriormente, con sus
+operaciones m¬s elementales, utilizando los tipos de datos adecuados
+para las siguientes variantes de implementaci’n:
+
+Listas simplemente encadenadas
+
+Listas doblemente encadenadas
+
+Arreglos unidimensionales est¬ticos (con una dimensi’n N grande)
+
+Implementar procedimientos y/o funciones recursivas sobre las funciones
+definidas axiom¬ticamente sobre el TAD Lista(a) definidas en ejercicios
+anteriores. Justificar la decisi’n de por qu  se opt’ implementarla como
+procedimiento o funci’n.
+
+Implementar el procedimiento recursivo mostrarElementos, que dada una
+lista, imprima el contenido de todos sus elementos. Implementar este
+procedimiento sobre cada una de las estructuras implementadas del tipo
+lista.
+
+Implementar el procedimiento recursivo posicionesPares, que dado un
+arreglo de enteros, imprima el contenido de sus posiciones pares.
+
+Implementar la funci’n recursiva productoEscalar, que dados dos vectores
+de enteros, retorne un entero que represente el producto escalar de
+ambos.
+
+Implementar el procedimiento recursivo busquedaBinaria, que dado un
+vector ordenado de enteros y un entero dado, retorne si el entero dado
+pertenece a alguna posici’n del vector. La bﬂsqueda deber¬ efectuarse
+con la t cnica de bﬂsqueda binaria.
+
+Implementar el procedimiento recursivo mostrarElementosTriangular, que
+dado un vector A, retorne todos sus elementos de la siguiente forma:
+
+	A1, A2,......, AN
+
+	    A2,......, AN
+
+........
+
+AN
+
+Especificar el TAD MatrizCuadrada(a), con constructores propios, y con
+proyectores y operaciones elementales.
+
+Implementar el TAD anterior utilizando las siguientes estructuras:
+
+Listas simplemente encadenadas de listas simplemente encadenadas
+
+Arreglos bidimensionales est¬ticos (con una dimensi’n N grande) 
+
+Definir e implementar la funci’n minimoCuad, que dada una matriz
+cuadrada, retorne su elemento mŒnimo.
+
+Definir e implementar el procedimiento maximosCuad, que dada una matriz
+cuadrada, retorne una lista con los valores m¬ximos correspondientes a
+cada una de sus filas.
+
+Definir e implementar el procedimiento diagonalPrincipal, que dada una
+matriz cuadrada, retorne una lista que corresponda a cada uno de los
+elementos que conformen su diagonal principal (de la primera fila a la
+ﬂltima).
+
+Definir e implementar la funci’n esSimetrica, que dada una matriz
+cuadrada, retorne si es sim trica con respecto a su diagonal principal.
+
+Definir e implementar el procedimiento triangularInferior, que dada una
+matriz cuadrada, retorne una lista de listas que corresponda a cada una
+de la filas de la matriz que conformen su triangular inferior (de la
+segunda fila a la ﬂltima). En la implementaci’n, no debe recorrer
+elementos innecesarios de la matriz.
+
+Definir e implementar el procedimiento cantidadElementoDiagonal, que
+dada una matriz cuadrada de caracteres, retorne una lista que indique
+por cada columna, la cantidad de veces que se repite el car¬cter ubicado
+en la diagonal principal de la matriz.
+
+Por ejemplo:
+
+A	B	H	P
+
+3
+
+A	I	J	P
+
+2
+
+K	I	H	L
+
+3
+
+A	N	H	O
+
+1
+
+
+
+El juego de las Torres de Hanoi consiste de tres postes, llamados
+Origen, Destino y Auxiliar, y n discos de diferentes tama”os apilados en
+el poste Origen, desde el de mayor tama”o en su base hasta el de menor
+tama”o en su tope. El objetivo del juego es dejar todos los n discos en
+el poste Destino, tambi n ordenados por tama”o, como estaban
+originalmente en el poste Origen. Para lograr el objetivo, es necesario
+realizar movimientos de discos entre postes. Cada movimiento consiste en
+la extracci’n del disco ubicado en el tope de un poste, y su ubicaci’n
+en otro poste, siempre que si existiera un disco en el tope del otro
+disco, el tama”o de  ste deber¬ ser mayor al del disco a mover en ese
+poste. Se puede utilizar el poste Auxiliar para mover temporalmente
+algunos discos.
+
+Implementar el procedimiento recursivo hanoi, que dado un nﬂmero n que
+represente la cantidad de discos del juego, imprima la sucesi’n de
+movimientos necesarias para resolver el problema. Cada movimiento se
+representa como un par (poste desde - poste hasta).
+
+Demostrar por inducci’n utilizando el procedimiento implementado en el
+punto a) que la cantidad de movimientos del juego para n discos es 2n-1.
+
+Implementar el procedimiento recursivo laberinto, que dada una lista de
+coordenadas (x,y) que representan casillas libres de un laberinto
+bidimensional (las no indicadas representan ``paredes''), una coordenada
+de salida, una direcci’n obligatoria de salida y una coordenada de
+llegada, retorne una lista de movimientos posibles ``continuos'' desde
+la coordenada de salida hasta la de llegada, realizando en cada paso
+movimientos que s’lo pueden ser arriba, abajo, izquierda y derecha.
+
+Ayuda: Se puede considerar como criterio, la recorrida exhaustiva por el
+laberinto desde la posici’n inicial hasta la final, volviendo atr¬s en
+los pasos ya recorridos si se concluyera que ese camino no llega a la
+soluci’n. Tambi n deber¬ considerarse el camino ya recorrido para no
+volverlo a repetir en el caso de algﬂn cruce, ya que puede producirse un
+ciclo sin fin.
+
+Implementar el procedimiento recursivo ochoReinas, que d  c’mo resultado
+una lista de ocho coordenadas de un tablero de 8 x 8, que representen
+las ubicaciones de las 8 reinas en el mismo, tal que no existan reinas
+que se ataquen entre sŒ como en el juego de Ajedrez.
+
+Explicar si puede evitarse el uso del tipo puntero en la implementaci’n
+de TADs de estructuras de datos recursivas. Justifique su respuesta.
+
+?Qu  particularidades podrŒa tener la implementaci’n de un TAD con
+variables de tipo, en relaci’n a la instanciaci’n de esa variable de
+tipo con un tipo recursivo respecto a la instanciaci’n con un tipo no
+recursivo? Detalle y d  un ejemplo.
+
+Recursi’n de pila y de cola
+
+Diferenciar la recursividad de pila y de cola en las siguientes
+definiciones -en su mayorŒa funciones-, y sus posteriores
+implementaciones (de ejercicios anteriores):
+
+- sumatoria
+
+- factorial
+
+- producto
+
+- pares
+
+- desdeHasta
+
+- pertenece
+
+- concatenacion
+
+- reversa
+
+- intercalar
+
+- todosConTodos
+
+Reemplazar en los casos anteriores la recursividad de cola por
+iteraci’n.
+
+Reemplazar en los casos anteriores la recursividad de pila por el uso de
+una estructura de pila explŒcita.
+
+Reimplementar la funci’n mcd expresada como recursividad de cola,
+reemplaz¬ndola por iteraciones.
+
+Definir la funci’n recursiva sumaAlternada, que dada una lista de
+enteros, retorne el resultado de evaluar el primer elemento menos el
+segundo m¬s el tercero, menos el cuarto, y asŒ sucesivamente, sin
+importar la cantidad de elementos que la lista posea.
+
+Por ejemplo: sumaAlternada([4,5,3,8,7]) = 4-5+3-8+7 = 1
+
+Definir una versi’n utilizando recursividad de pila, y otra versi’n
+utilizando recursividad de cola.
+
+Reimplementar las siguientes funciones y procedimientos expresadas con
+recursividad de pila, por el uso de una estructura de pila explŒcita.
+
+- fibonacci
+
+- combinatorio
+
+- ackermann
+
+- sierpinski
+
+- partes
+
+- hanoi
+
+Universidad CAECE
+
+Algoritmos y Estructuras de Datos II
+
+	P¬gina   PAGE  3 
+
