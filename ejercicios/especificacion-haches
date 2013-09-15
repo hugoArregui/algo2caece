@@ -1,0 +1,20 @@
+
+Tipo H
+
+constructor
+
+C: Nat x Par -> H
+
+proyectores
+
+long: H -> Nat
+punto H -> Par
+
+Axiomas
+....
+
+
+
+
+
+haches(n, long, p) = cons( C(long, p), haches'

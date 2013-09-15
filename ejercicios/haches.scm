@@ -1,0 +1,20 @@
+(define (C long p)
+  (list 'C long p))
+
+(define (haches n long p)
+  (if (> n 0)
+    (let ((x (car p))
+          (y (cdr p))
+          (l (/ long 2)))
+      (let ((v1 (cons (- x l) (+ y l)))
+            (v2 (cons (- x l) (- y l)))
+            (v3 (cons (+ x l) (- y l)))
+            (v4 (cons (+ x l) (+ y l))))
+        (cons (C long p) (append
+                           (haches (- n 1) l v1)
+                           (haches (- n 1) l v2)
+                           (haches (- n 1) l v3)
+                           (haches (- n 1) l v4)))))
+    '()))
+
+(print (haches 4 4 (cons 0 0)))
