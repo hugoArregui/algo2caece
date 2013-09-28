@@ -23,3 +23,23 @@
    ;2       3
  ;4   5
 
+;nivel'(a, AV, n) = par(false, n)
+;nivel'(a, ConsArbBin(x, si, sd), n) =
+  ;if (a = x) then
+    ;par(true, n)
+  ;else
+    ;r <- nivel'(a, si, n + 1)
+    ;if #1(r) then
+      ;r
+    ;else
+      ;r2 <- nivel'(a, sd, n + 1)
+      ;if #1(r2) then
+        ;r2
+      ;else
+        ;par(false, max(#2(r), #2(r2)))
+      ;end
+    ;end
+  ;end
+      
+  
+    
