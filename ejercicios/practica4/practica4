@@ -1,0 +1,70 @@
+
+1)
+
+a) (definido en el apunte, lo pongo para experimentar)
+TAD Bool
+exporta  ..
+usa Either
+
+Constructores
+
+  FromEither: Either(Unit, Unit) -> Bool
+
+Axiomas
+  
+  true = FromEither(Left(Unit))
+
+...
+
+b) 
+TAD Nat
+exporta ...
+usa Maybe, Bool
+
+Contructores
+  
+  FromMaybe: Maybe(Nat) -> Nat
+
+Proyectores
+
+  cero : Nat
+  suc  : Nat -> Nat
+
+  esCero : Nat -> Bool
+  sumar: Nat x Nat -> Nat
+
+Axiomas
+
+  cero = FromMaybe(Nothing)
+  suc(n) = FromMaybe(Just(n))
+
+  esCero(FromMaybe(Nothing)) = True
+  esCero(FromMaybe(FromMaybe(_))) = False
+
+  sumar(FromMaybe(Nothing), n) = n
+  sumar(FromMaybe(Just(n1)), n) = sumar(n1, suc(n))
+
+c)
+TAD List(a)
+exporta ..
+usa Maybe, Bool
+
+Constructores
+
+  FromMaybe: Maybe(a x List(a))
+
+Proyectores
+  lv   : List(a)
+  cons : a x List(a) -> List(a)
+  esListaVacia: List(a) -> Bool
+
+Axiomas
+
+  lv = FromMaybe(Nothing)
+  cons(x, xs) = FromMaybe(Just(x ++ xs))     ; ++ es prod cartesiano
+
+  esListaVacia(FromMaybe(Nothing)) = True
+  esListaVacia(FromMaybe(Just(_)) = False
+
+  cabeza(FromMaybe(Just(x ++ xs))) = x
+  cola(FromMaybe(Just(x ++ xs))) = xs
